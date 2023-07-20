@@ -48,7 +48,7 @@ pipeline {
     stage('Update Deployment File') {
         environment {
             GIT_REPO_NAME = "newdev"
-            GIT_USER_NAME = "Glenrodrigues"
+            GIT_USER_NAME = "Glen Rodrigues"
         }
         steps {
             withCredentials([string(credentialsId: 'github', variable: 'GITHUB_TOKEN')]) {
